@@ -41,3 +41,19 @@ function deletarMensagem(id) {
 window.onload = function() {
     verificarLocalStorage();
 };
+
+document.addEventListener("DOMContentLoaded", function() {
+    const formulario = document.getElementById("formContato");
+    
+    if (formulario) {
+        formulario.addEventListener("submit", function(event) {
+            const nome = document.getElementById("nome").value;
+            const email = document.getElementById("email").value;
+            const mensagem = document.getElementById("mensagem").value;
+            
+            salvarMensagem(nome, email, mensagem);
+            
+            alert("Mensagem enviada e guardada com sucesso no sistema local!");
+        });
+    }
+});
