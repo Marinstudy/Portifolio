@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio de TI - Apresentação</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="final.css">
+</head>
+<body>
+
+  <button class="mobile-nav-toggle d-lg-none" id="mobileToggle">
+    <i class="bi bi-list"></i>
+  </button>
+
+  
+  <header id="sidebar" class="d-flex flex-column justify-content-between p-3">
+    <div>
+      <div class="profile text-center my-3">
+        <img src="https://media.licdn.com/dms/image/v2/D4D03AQFTOcbOR7b6EQ/profile-displayphoto-scale_200_200/B4DaD_Mlv6K0Ac-/0/1790987886516?e=1795046400&v=beta&t=uSh5M21M55f-C_DSuQgeNSZeDZIY9jEnsz5NDWVq7T4" alt="Perfil" class="rounded-circle img-fluid">
+        <h1 class="text-light fs-5 font-weight-bold mt-3 mb-1">Maria Clara de LIma Ferreira</h1>
+        <div class="social-links text-center mt-2">
+          <a href="https://github.com/Marinstudy" target="_blank"><i class="bi bi-github"></i></a>
+          <a href="https://www.linkedin.com/in/maria-clara-de-lima-ferreira-319658313" target="_blank"><i class="bi bi-linkedin"></i></a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mariaclara.lf16@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a>
+      </div>
+
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html" class="active"><i class="bi bi-house"></i> Início / Sobre</a></li>
+          
+          
+          <li class="accordion sidebar-dropdown" id="accordionAreas">
+            <div class="accordion-item bg-transparent border-0">
+              <h2 class="accordion-header" id="headingAreas">
+                <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAreas">
+                  <i class="bi bi-journal-bookmark pe-2 text-secondary"></i> Áreas do Conhecimento
+                </button>
+              </h2>
+              <div id="collapseAreas" class="accordion-collapse collapse" data-bs-parent="#accordionAreas">
+                <div class="accordion-body border-0 d-flex flex-column gap-1">
+                  <a href="Ciências Humanas.html" class="py-1 text-secondary text-decoration-none">Humanas</a>
+                  <a href="Ciências da Natureza.html" class="py-1 text-secondary text-decoration-none">Natureza</a>
+                  <a href="Matemática.html" class="py-1 text-secondary text-decoration-none">Matemática</a>
+                  <a href="Linguagens.html" class="py-1 text-secondary text-decoration-none">Linguagens</a>
+                 
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li><a href="Técnico em Informática.html"><i class="bi bi-code-slash"></i> Técnico em Informática</a></li>
+          <li><a href="#tendencias"><i class="bi bi-cpu"></i> Tendências Tecnológicas</a></li>
+          <li><a href="#projetos"><i class="bi bi-folder-check"></i> Projetos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+ 
+  <main id="main-content">
+    <div class="container-fluid">
+      
+     
+      <section id="sobre" class="mb-5">
+        <div class="section-title">
+          <h2>Apresentação Pessoal</h2>
+        </div>
+        <p class="lead mt-3 text-secondary">Estudante do ensino médio técnico em informática no SENAC (conclusão em 2026) com foco em desenvolvimento de sistemas. Tenho experiência com Python, interfaces em Streamlit e bancos de dados MySQL, além de certificações Cisco em Python, IA e Segurança Digital. Semifinalista do 19º Empreenda SENAC com um projeto web integrado a IA, busco aplicar tecnologia e inovação na criação de soluções práticas.</p>
+        
+        <div class="row g-4 mt-2">
+          <div class="col-md-6">
+            <div class="p-4 card-tech h-100">
+              <h4 class="text-info mb-3"><i class="bi bi-tools me-2"></i>Habilidades Técnicas (Hard Skills)</h4>
+              <ul class="list-group list-group-flush bg-transparent">
+                <li class="list-group-item bg-transparent text-light border-secondary">HTML5, CSS3 & Bootstrap 5</li>
+                <li class="list-group-item bg-transparent text-light border-secondary">JavaScript </li>
+                <li class="list-group-item bg-transparent text-light border-secondary">Lógica de Programação & Algoritmos</li>
+                <li class="list-group-item bg-transparent text-light border-secondary">Bancos de Dados SQL (MySQL)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="p-4 card-tech h-100">
+              <h4 class="text-info mb-3"><i class="bi bi-person-gear me-2"></i>Habilidades Comportamentais (Soft Skills)</h4>
+              <ul class="list-group list-group-flush bg-transparent">
+                <li class="list-group-item bg-transparent text-light border-secondary">Resolução Estruturada de Problemas</li>
+                <li class="list-group-item bg-transparent text-light border-secondary">Trabalho em Equipe e Colaboração</li>
+                <li class="list-group-item bg-transparent text-light border-secondary">Pensamento Crítico e Analítico</li>
+                <li class="list-group-item bg-transparent text-light border-secondary">Comunicação Clara e Aprendizado Contínuo</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <section id="tendencias" class="mb-5 pt-4">
+        <div class="section-title">
+          <h2>Tendências Tecnológicas</h2>
+        </div>
+        <div class="row g-4 mt-2">
+          <div class="col-md-6 col-lg-3">
+            <div class="card card-tech h-100 p-3 text-light">
+              <i class="bi bi-shield-lock fs-1 text-primary mb-2"></i>
+              <h5>Cibersegurança</h5>
+              <p class="small text-secondary mb-0">Proteção de sistemas e redes contra ataques digitais, utilizando criptografia e práticas de defesa contínua.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card card-tech h-100 p-3 text-light">
+              <i class="bi bi-currency-bitcoin fs-1 text-warning mb-2"></i>
+              <h5>Blockchain</h5>
+              <p class="small text-secondary mb-0">Tecnologia de registro distribuído e imutável que garante segurança e transparência em transações virtuais.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card card-tech h-100 p-3 text-light">
+              <i class="bi bi-robot fs-1 text-success mb-2"></i>
+              <h5>Automação / Robótica</h5>
+              <p class="small text-secondary mb-0">Uso de softwares e máquinas para executar tarefas repetitivas com alta precisão e eficiência industrial.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card card-tech h-100 p-3 text-light">
+              <i class="bi bi-hdd-network fs-1 text-danger mb-2"></i>
+              <h5>Edge Computing</h5>
+              <p class="small text-secondary mb-0">Processamento de dados próximo à sua origem para reduzir a latência e acelerar a tomada de decisão.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    
+      <section id="projetos" class="mb-5 pt-4">
+        <div class="section-title">
+          <h2>Galeria de Projetos</h2>
+        </div>
+        <div class="row g-4 mt-2">
+          <div class="col-md-6">
+            <div class="card card-tech text-light overflow-hidden">
+              <div class="card-body">
+                <h5 class="card-title">Boostrap</h5>
+                <p class="card-text text-secondary">Página web desenvolvida com HTML5 e Bootstrap, estruturada com componentes interativos como barra de navegação responsiva (drawer), cartões de apresentação de produtos, botões personalizados e carrossel de imagens dinâmico.</p>
+                <a href="https://github.com/Marinstudy/Tarefa/blob/main/index.html" target="_blank" class="btn btn-outline-info btn-sm"><i class="bi bi-github me-1"></i> Repositório Original</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card card-tech text-light overflow-hidden">
+              <div class="card-body">
+                <h5 class="card-title">Atividade teste</h5>
+                <p class="card-text text-secondary">Página web em HTML desenvolvida como um exercício prático e criativo para explorar a estruturação de múltiplos ficheiros interligados, navegação por menus em lista (links entre páginas), personalização de cores de fundo e inserção de imagens, tendo como tema o universo da série animada As Três Espiãs Demais.</p>
+                <a href="https://github.com/Marinstudy/Tarefa2" target="_blank" class="btn btn-outline-info btn-sm"><i class="bi bi-github me-1"></i> Repositório Original</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+</body>
+</html>

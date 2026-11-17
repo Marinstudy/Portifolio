@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ciências da Natureza e suas Tecnologias</title>
+  
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="final.css">
+</head>
+<body>
+
+  
+  <button class="mobile-nav-toggle d-lg-none" id="mobileToggle">
+    <i class="bi bi-list"></i>
+  </button>
+
+ 
+  <header id="sidebar" class="d-flex flex-column justify-content-between p-3">
+    <div>
+      <div class="profile text-center my-3">
+        <img src="https://media.licdn.com/dms/image/v2/D4D03AQFTOcbOR7b6EQ/profile-displayphoto-scale_200_200/B4DaD_Mlv6K0Ac-/0/1790987886516?e=1795046400&v=beta&t=uSh5M21M55f-C_DSuQgeNSZeDZIY9jEnsz5NDWVq7T4" alt="Perfil" class="rounded-circle img-fluid">
+        <h1 class="text-light fs-5 font-weight-bold mt-3 mb-1">Maria Clara de Lima Ferreira</h1>
+        <div class="social-links text-center mt-2">
+          <a href="https://github.com/Marinstudy"target="_blank"><i class="bi bi-github"></i></a>
+          <a href="https://www.linkedin.com/in/maria-clara-de-lima-ferreira-319658313" target="_blank"><i class="bi bi-linkedin"></i></a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mariaclara.lf16@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a>
+        </div>
+      </div>
+
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html"><i class="bi bi-house"></i> Início / Sobre</a></li>
+          
+        
+          <li class="accordion sidebar-dropdown" id="accordionAreas">
+            <div class="accordion-item bg-transparent border-0">
+              <h2 class="accordion-header" id="headingAreas">
+                <button class="accordion-button px-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAreas">
+                  <i class="bi bi-journal-bookmark pe-2 text-secondary"></i> Áreas do Conhecimento
+                </button>
+              </h2>
+              <div id="collapseAreas" class="accordion-collapse collapse show" data-bs-parent="#accordionAreas">
+                <div class="accordion-body border-0 d-flex flex-column gap-1">
+                  <a href="Ciências Humanas.html" class="py-1 text-secondary text-decoration-none">Humanas</a>
+                  <a href="Ciências da Natureza.html" class="py-1 text-info fw-bold text-decoration-none">Natureza</a>
+                  <a href="Matemática.html" class="py-1 text-secondary text-decoration-none">Matemática</a>
+                  <a href="Linguagens.html" class="py-1 text-secondary text-decoration-none">Linguagens</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li><a href="Técnico em Informática.html"><i class="bi bi-code-slash"></i> Técnico em Informática</a></li>
+          <li><a href="index.html#tendencias"><i class="bi bi-cpu"></i> Tendências Tecnológicas</a></li>
+          <li><a href="index.html#projetos"><i class="bi bi-folder-check"></i> Projetos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+ 
+  <main id="main-content">
+    <div class="container-fluid">
+      
+      <div class="section-title">
+        <h2>Ciências da Natureza e suas Tecnologias</h2>
+      </div>
+
+      <div class="card card-tech p-4 mt-4">
+        <h3 class="text-info mb-3">O Método Científico e a Depuração de Erros</h3>
+        
+        <p class="lead text-light">
+          As Ciências da Natureza — fundamentam-se no método científico: observação, formulação de hipóteses, experimentação e análise de resultados. Esse mesmo ciclo é aplicado diariamente na rotina de desenvolvimento de sistemas e na resolução de bugs.
+        </p>
+
+        <p class="text-secondary fs-6 mt-3">
+          Quando um programa não funciona como esperado, o programador atua como um cientista investigativo. É preciso formular uma hipótese sobre a causa do erro (uma falha na lógica, um dado corrompido, uma incompatibilidade de tipos), realizar testes controlados (depuração) e analisar as saídas para validar a correção. Além disso, conceitos físicos e biológicos muitas vezes inspiram a modelagem de sistemas complexos, simulações computacionais e a automação de processos industriais, mostrando que a lógica computacional interage diretamente com as leis do mundo real.
+        </p>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+ 
+    document.getElementById("mobileToggle").addEventListener("click", () => {
+      document.getElementById("sidebar").classList.toggle("active");
+    });
+  </script>
+</body>
+</html>

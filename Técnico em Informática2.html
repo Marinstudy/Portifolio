@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Técnico em Informática - Maria Clara</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="final.css">
+</head>
+<body>
+
+  <button class="mobile-nav-toggle d-lg-none" id="mobileToggle">
+    <i class="bi bi-list"></i>
+  </button>
+
+  <header id="sidebar" class="d-flex flex-column justify-content-between p-3">
+    <div>
+      <div class="profile text-center my-3">
+        <img src="https://media.licdn.com/dms/image/v2/D4D03AQFTOcbOR7b6EQ/profile-displayphoto-scale_200_200/B4DaD_Mlv6K0Ac-/0/1790987886516?e=1795046400&v=beta&t=uSh5M21M55f-C_DSuQgeNSZeDZIY9jEnsz5NDWVq7T4" alt="Perfil" class="rounded-circle img-fluid">
+        <h1 class="text-light fs-5 font-weight-bold mt-3 mb-1">Maria Clara de Lima Ferreira</h1>
+        <div class="social-links text-center mt-2">
+          <a href="https://github.com/Marinstudy" target="_blank"><i class="bi bi-github"></i></a>
+          <a href="https://www.linkedin.com/in/maria-clara-de-lima-ferreira-319658313" target="_blank"><i class="bi bi-linkedin"></i></a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mariaclara.lf16@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a>
+        </div>
+      </div>
+
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html"><i class="bi bi-house"></i> Início / Sobre</a></li>
+          
+          <li class="accordion sidebar-dropdown" id="accordionAreas">
+            <div class="accordion-item bg-transparent border-0">
+              <h2 class="accordion-header" id="headingAreas">
+                <button class="accordion-button collapsed px-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAreas">
+                  <i class="bi bi-journal-bookmark pe-2 text-secondary"></i> Áreas do Conhecimento
+                </button>
+              </h2>
+              <div id="collapseAreas" class="accordion-collapse collapse" data-bs-parent="#accordionAreas">
+                <div class="accordion-body border-0 d-flex flex-column gap-1">
+                  <a href="Ciências Humanas.html" class="py-1 text-secondary text-decoration-none">Humanas</a>
+                  <a href="Ciências da Natureza.html" class="py-1 text-secondary text-decoration-none">Natureza</a>
+                  <a href="Matemática.html" class="py-1 text-secondary text-decoration-none">Matemática</a>
+                  <a href="Linguagens.html" class="py-1 text-secondary text-decoration-none">Linguagens</a>
+                </div>
+              </div>
+            </div>
+          </li>
+      
+          <li><a href="Técnico em Informática.html" class="active"><i class="bi bi-code-slash"></i> Técnico em Informática</a></li>
+          <li><a href="index.html#tendencias"><i class="bi bi-cpu"></i> Tendências Tecnológicas</a></li>
+          <li><a href="index.html#projetos"><i class="bi bi-folder-check"></i> Projetos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="container-fluid">
+      <section id="tecnico-info" class="mb-5">
+        <div class="section-title">
+          <h2>Técnico em Informática - Formação e Competências</h2>
+        </div>
+        
+        <p class="lead mt-3 text-secondary">
+          Minha jornada no Ensino Médio Técnico em Informática no Senac foi construída através de uma sólida evolução prática e teórica estruturada em três anos de formação, contemplando desde a infraestrutura física de computadores até o desenvolvimento avançado de sistemas web e desktop.
+        </p>
+
+        <div class="card card-tech text-light p-4 mb-4">
+          <h4 class="text-info mb-3"><i class="bi bi-pc-display me-2"></i>1º Ano: Infraestrutura e Fundamentos de Hardware</h4>
+          <p class="text-secondary mb-0">
+            No primeiro ano, adquiri competências essenciais voltadas para a arquitetura de computadores. Conforme as diretrizes curriculares, desenvolvi a capacidade de planejar e executar a montagem, instalação de hardware e software, além de rotinas preventivas e corretivas de manutenção de computadores, garantindo o funcionamento eficiente de sistemas locais.
+          </p>
+        </div>
+
+        <div class="card card-tech text-light p-4 mb-4">
+          <h4 class="text-info mb-3"><i class="bi bi-hdd-network me-2"></i>2º Ano: Redes Locais e Sistemas Servidores</h4>
+          <p class="text-secondary mb-0">
+            No segundo ano, o foco expandiu-se para a conectividade e infraestrutura de redes. Dominei o planejamento, execução da instalação e manutenção de redes locais de computadores, bem como a implementação, configuração e monitoramento de sistemas operacionais de redes locais e servidores, estruturando o ambiente para a comunicação de dados corporativos.
+          </p>
+        </div>
+
+        <div class="card card-tech text-light p-4 mb-4">
+          <h4 class="text-info mb-3"><i class="bi bi-code-slash me-2"></i>3º Ano: Desenvolvimento de Software e Aplicações Web/Desktop</h4>
+          <p class="text-secondary mb-0">
+            No terceiro ano, consolidei minha formação em desenvolvimento de sistemas. Abrange a capacidade de desenvolver algoritmos, modelar e criar bancos de dados, e executar testes e implantação de aplicações computacionais. Isso inclui a codificação, manutenção e documentação de softwares para desktop e internet, além da manipulação de elementos visuais, design responsivo, elementos estruturais de sites e otimização de interfaces web.
+          </p>
+        </div>
+      </section>
+      <section id="visitas" class="mb-5">
+        <div class="section-title">
+          <h2>Técnico em Informática - Visitas e Atividades</h2>
+        </div>
+        <p class="lead mt-3 text-secondary">Registros e experiências práticas desenvolvidas ao longo do curso técnico no Senac.</p>
+
+        <div class="row g-4 mt-2">
+          
+          <div class="col-md-6">
+            <div class="card card-tech text-light overflow-hidden h-100">
+              <img src="https://media.licdn.com/dms/image/v2/D4D22AQEVTyC6HNz2Pg/feedshare-shrink_800/B4DaD_fGcPK0Ac-/0/1790992738710?e=1796256000&v=beta&t=ZJromeTg7Gkeyx2vjx7zfflnQtGKywzb3cxyK0wTeTE" class="card-img-top" alt="">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                  <h5 class="card-title">Visita Técnica inovabra</h5>
+                  <p class="card-text text-secondary">Durante a visita, pude conhecer de perto como funciona um dos maiores ecossistemas de inovação e startups do Brasil, entendendo como grandes empresas e startups colaboram para aplicar inteligência artificial, automação e novas tecnologias no mercado.</p>
+                </div>
+                <a href="#" target="_blank" class="btn btn-outline-info btn-sm mt-3 align-self-start">
+                  <i class="bi bi-github me-1"></i> Repositório / Saiba Mais
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card card-tech text-light overflow-hidden h-100">
+              <img src="https://media.licdn.com/dms/image/v2/D4D22AQFCebS9a9nZuQ/feedshare-shrink_480/B4DaD_n5WtIkAg-/0/1790995044033?e=1796256000&v=beta&t=GzX9aWbs_R4QiovKulo2RXWHmh0ppw23ivKKj8dSBNc" class="card-img-top" alt="Atividade Prática">
+              <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                  <h5 class="card-title">Movimenta IA 2026</h5>
+                  <p class="card-text text-secondary">O Movimenta AI é um evento promovido pelo SENAC focado na aplicação prática da tecnologia, reunindo inovação, futuro do trabalho e solução de desafios reais do mercado. Foi nesse ambiente de imersão que desenvolvi, junto com a minha equipe, uma aplicação web voltada para resolver um problema prático do dia a dia.</p>
+                </div>
+                <a href="#" target="_blank" class="btn btn-outline-info btn-sm mt-3 align-self-start">
+                  <i class="bi bi-github me-1"></i> Repositório / Saiba Mais
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById("mobileToggle").addEventListener("click", () => {
+      document.getElementById("sidebar").classList.toggle("active");
+    });
+  </script>
+</body>
+</html>
