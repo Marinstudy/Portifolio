@@ -27,6 +27,19 @@ function verificarLocalStorage() {
     }
 }
 
+function salvarMensagem(nome, email, mensagem) {
+    let mensagens = JSON.parse(localStorage.getItem("mensagens_portfolio")) || [];
+    let novaMensagem = {
+        id: Date.now(),
+        nome: nome,
+        email: email,
+        mensagem: mensagem,
+        data: new Date().toISOString().split('T')[0]
+    };
+    mensagens.push(novaMensagem);
+    localStorage.setItem("mensagens_portfolio", JSON.stringify(mensagens));
+}
+
 function lerMensagens() {
     return JSON.parse(localStorage.getItem("mensagens_portfolio")) || [];
 }
@@ -35,32 +48,24 @@ function deletarMensagem(id) {
     let mensagens = lerMensagens();
     mensagens = mensagens.filter(msg => msg.id !== id);
     localStorage.setItem("mensagens_portfolio", JSON.stringify(mensagens));
-    console.log("Mensagem apagada com sucesso!");
 }
 
 window.onload = function() {
     verificarLocalStorage();
-};
 
-
-document.addEventListener("DOMContentLoaded", function() {
     const formulario = document.getElementById("formContato");
-    
     if (formulario) {
         formulario.addEventListener("submit", function(event) {
             event.preventDefault(); 
-            
+
             const nome = document.getElementById("nome").value;
             const email = document.getElementById("email").value;
             const mensagem = document.getElementById("mensagem").value;
-            
-          
+
             salvarMensagem(nome, email, mensagem);
-            
-           
+
             alert("Mensagem enviada e guardada com sucesso no sistema local!");
-           
             formulario.reset();
         });
     }
-});
+};
